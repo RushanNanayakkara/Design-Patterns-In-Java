@@ -1,7 +1,5 @@
 package singleton;
 
-import java.util.*;
-
 public class SingletonApp{
     public static void main(String[] args) {
 
