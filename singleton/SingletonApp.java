@@ -1,3 +1,5 @@
+package singleton;
+
 import java.util.*;
 
 public class SingletonApp{
