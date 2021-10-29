@@ -20,7 +20,11 @@ public class SingletonItem{
 
     public static SingletonItem getSingletonInstance(){
         if(instance==null){
-            instance = new SingletonItem();
+            synchronized(SingletonItem.class){
+                if(instance==null){
+                    instance = new SingletonItem();
+                }
+            }
         }
         return instance;
     }
